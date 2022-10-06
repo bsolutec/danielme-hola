@@ -27,7 +27,8 @@ public class HelloServlet extends HttpServlet {
 		PrintWriter printWriter = response.getWriter();
 		response.setContentType("text/plain;charset=UTF-8");
 		log.debug("returning the message {}", HELLO_MESSAGE);
-		printWriter.print(HELLO_MESSAGE);
+		printWriter.println(HELLO_MESSAGE);
+		printWriter.print("Es otro mensaje, para subir a github");
 
 	}
 
